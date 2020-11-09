@@ -14,5 +14,6 @@ public class HelloController {
        String name= SecurityContextHolder.getContext().getAuthentication().getName();
        return name;
     }
+    System.out.pring("你好呀");
 }
 
