@@ -10,10 +10,11 @@ public class HelloController {
 
     @RequestMapping("getname")
     @ResponseBody
+    //这东西
     public String demo(){
+        System.out.println("xiugai");
        String name= SecurityContextHolder.getContext().getAuthentication().getName();
        return name;
     }
-    System.out.pring("你好呀");
 }
 
